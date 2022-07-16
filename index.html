@@ -72,6 +72,14 @@
           console.log(res);
         });
       };
+      btns[4].onclick = () => {
+        axios({
+          method: "DELETE",
+          url: "http://localhost:3000/posts/3",
+        }).then((res) => {
+          console.log(res);
+        });
+      };
     </script>
   </body>
 </html>

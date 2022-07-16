@@ -54,3 +54,14 @@ axios({
   console.log(res);
 });
 ```
+
+make a DELETE request
+
+```javascript
+axios({
+  method: "DELETE",
+  url: "http://localhost:3000/posts/3",
+}).then((res) => {
+  console.log(res);
+});
+```
