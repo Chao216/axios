@@ -40,3 +40,17 @@ axios({
   console.log(res);
 });
 ```
+
+make a PATCH request
+
+```javascript
+axios({
+  method: "PATCH",
+  url: "http://localhost:3000/posts/3",
+  data: {
+    title: "IS CHINA OPEN NOW?",
+  },
+}).then((res) => {
+  console.log(res);
+});
+```

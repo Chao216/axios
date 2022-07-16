@@ -23,6 +23,7 @@
       <button class="btn btn-lg btn-primary">GET</button>
       <button class="btn btn-lg btn-warning">POST</button>
       <button class="btn btn-lg btn-danger">PUT</button>
+      <button class="btn btn-lg btn-success">PATCH</button>
       <button class="btn btn-lg btn-dark">DELETE</button>
     </div>
     <script>
@@ -55,6 +56,17 @@
           data: {
             title: "Why is it so difficult to travel to China?",
             author: "Chao Jiang, and all other oversea Chinese",
+          },
+        }).then((res) => {
+          console.log(res);
+        });
+      };
+      btns[3].onclick = () => {
+        axios({
+          method: "PATCH",
+          url: "http://localhost:3000/posts/3",
+          data: {
+            title: "IS CHINA OPEN NOW?",
           },
         }).then((res) => {
           console.log(res);
