@@ -36,6 +36,30 @@
           console.log(res);
         });
       };
+      btns[1].onclick = () => {
+        axios({
+          method: "POST",
+          url: "http://localhost:3000/posts",
+          data: {
+            title: "Why is it so difficult to travel to China?",
+            author: "Chao Jiang",
+          },
+        }).then((res) => {
+          console.log(res);
+        });
+      };
+      btns[2].onclick = () => {
+        axios({
+          method: "PUT",
+          url: "http://localhost:3000/posts/3",
+          data: {
+            title: "Why is it so difficult to travel to China?",
+            author: "Chao Jiang, and all other oversea Chinese",
+          },
+        }).then((res) => {
+          console.log(res);
+        });
+      };
     </script>
   </body>
 </html>

@@ -1,12 +1,29 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" },
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
     {
       "id": 2,
       "title": "a twilight in the forbidden city",
       "author": "Johnstone"
+    },
+    {
+      "title": "Why is it so difficult to travel to China?",
+      "author": "Chao Jiang, and all other oversea Chinese",
+      "id": 3
     }
   ],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" }
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
