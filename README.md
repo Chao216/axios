@@ -65,3 +65,11 @@ axios({
   console.log(res);
 });
 ```
+
+axios config defaults
+
+```javascript
+axios.defaults.baseURL = "https://api.example.com";
+axios.defaults.method = "GET";
+axios.defaults.timeout = 2500;
+```
