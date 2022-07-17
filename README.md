@@ -73,3 +73,5 @@ axios.defaults.baseURL = "https://api.example.com";
 axios.defaults.method = "GET";
 axios.defaults.timeout = 2500;
 ```
+
+Interceptors
